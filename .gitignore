@@ -1,0 +1,12 @@
+.DS_Store
+*.pdf
+*.pptx
+*.docx
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
