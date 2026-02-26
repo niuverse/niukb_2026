@@ -1,11 +1,14 @@
-# 🤖 每日AI工作流调研任务说明
+# 🤖 每日AI工作流调研任务说明 | Daily AI Workflow Research Task
 
-## 📋 任务详情
+## 📋 任务详情 | Task Details
 
-**任务名称**: daily-ai-research  
-**执行时间**: 每天早上 10:00 (GMT+8)  
-**执行频率**: 每日  
-**目标仓库**: git@github.com:niuverse/niukb_2026.git  
+| 项目 | Item | 详情 | Details |
+|-----|------|-----|---------|
+| **任务名称** | Task Name | daily-ai-research | daily-ai-research |
+| **执行时间** | Execution Time | 每天早上 10:00 (GMT+8) | Daily 10:00 AM (GMT+8) |
+| **执行频率** | Frequency | 每日 | Daily |
+| **目标仓库** | Target Repository | git@github.com:niuverse/niukb_2026.git | git@github.com:niuverse/niukb_2026.git |
+| **输出语言** | Output Language | 中英双语 | Bilingual (CN/EN) |  
 
 ## 🎯 调研目标
 
@@ -16,12 +19,26 @@
 3. **效率提升实践** - 实际案例和最佳实践
 4. **工具集成** - 新工具、新插件、新workflow
 
-## 📁 输出位置
+## 📁 输出位置 | Output Locations
 
-调研报告将保存到:
+调研报告将保存到以下位置：
+
+**主要报告（双语）| Main Report (Bilingual):**
+```
+ai-workflow-digest/YYYY-MM/daily-digest_YYYY-MM-DD.md
+```
+
+**简化版笔记 | Simplified Notes:**
 ```
 notes/daily-ai-insights/YYYY-MM/daily-insights_YYYY-MM-DD.md
 ```
+
+### 报告内容 | Report Content
+
+- ✅ 中英双语标题和元数据 | Bilingual titles and metadata
+- ✅ 英文原文 + 中文翻译 | English original + Chinese translation
+- ✅ 双语表格和数据 | Bilingual tables and data
+- ✅ 双语使用指南 | Bilingual usage guide
 
 ## ⚙️ 前置配置
 
