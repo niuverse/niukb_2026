@@ -1,155 +1,47 @@
-# niukb_2026 - 牛梓茹的 2026 知识库 🧠
+# ArXiv Robotics Paper Reports
 
-> 一个综合性的个人知识管理系统，涵盖 AI 工作流自动化、论文阅读、技术笔记和资源整理。
+This repository contains daily summaries of robotics papers from arXiv (cs.RO category).
 
----
-
-## 📚 知识库概览
-
-这个仓库是我的外置大脑，记录和整理我在 2026 年的学习、研究和工作流程。
-
-### 核心内容
-
-| 模块 | 描述 | 路径 |
-|-----|------|------|
-| 🤖 **AI 工作流自动化** | 每日 AI 工作流洞察日报、工具评测、最佳实践 | `ai-workflow-digest/` |
-| 📄 **论文阅读** | 学术论文学术阅读笔记、精读和总结 | `papers/` |
-| 📝 **技术笔记** | 各种技术主题的深度笔记 | `notes/` |
-| 🛠️ **资源库** | PDF、模板、工具和资源收集 | `resources/` |
-| ⚙️ **自动化** | OpenClaw 自动化配置和脚本 | `.openclaw/` |
-
----
-
-## 🤖 AI 工作流自动化 (核心)
-
-### 每日自动化日报
-
-每天早上 10:00，OpenClaw 会自动调研最新的 AI 工作流文章，生成日报并推送至此。
-
-**存储位置**: `ai-workflow-digest/YYYY-MM/`
-
-**内容涵盖**:
-- AI Coding Agent (Codex, Claude Code, GitHub Copilot) 新用法
-- 自动化工作流最佳实践
-- 效率提升工具和技巧
-- 实际案例和教程
-
-### 使用指南
-
-```bash
-# 查看今日日报
-cat ai-workflow-digest/2026-02/daily-digest_2026-02-26.md
-
-# 查看历史
-ls -la ai-workflow-digest/
-```
-
----
-
-## 📄 论文阅读工作流
-
-### 目录结构
+## Directory Structure
 
 ```
-papers/
-├── reading/           # 正在阅读的论文
-│   └── paper-reading-skills/   # 阅读方法论
-├── done/              # 已完成的阅读
-└── todo/              # 待读清单
+niukb_2026/
+├── README.md                 # This file
+├── index.md                  # Master index of all reports
+├── papers/                   # Daily paper reports (by year/month)
+│   └── 2026/
+│       └── 02/
+│           └── 2026-02-24.md
+├── reports/                  # Analysis reports, trends, etc.
+│   └── (quarterly summaries, topic analysis)
+└── data/                     # Raw data (JSON)
+    └── 2026/
+        └── 02/
+            └── 2026-02-24.json
 ```
 
-### 阅读流程
+## Quick Links
 
-1. 将新论文放入 `papers/todo/`
-2. 开始阅读时移到 `papers/reading/`
-3. 完成后移到 `papers/done/`
-4. 在 `notes/` 中写主题总结
+- [Latest Report](./papers/2026/02/2026-02-24.md)
+- [Master Index](./index.md)
 
-### 论文笔记模板
+## Automation
 
-见 `resources/templates/paper_note_template.md`
+Reports are automatically generated daily at 10:00 AM (Asia/Shanghai) via OpenClaw cron job.
+
+## Categories
+
+Papers are automatically categorized into:
+- **manipulation** - Grasping, dexterous manipulation
+- **locomotion** - Walking, quadruped, biped robots
+- **navigation** - SLAM, path planning, exploration
+- **perception** - Vision, detection, segmentation
+- **learning** - RL, imitation learning, policy learning
+- **simulation** - Sim-to-real, physics engines
+- **humanoid** - Human-robot interaction, social robots
+- **control** - MPC, trajectory optimization
+- **planning** - Motion planning, task planning
 
 ---
 
-## 📝 技术笔记
-
-主题性的深度笔记，包括但不限于：
-
-- 具身智能 (Embodied AI)
-- 机器人仿真
-- 软件工程最佳实践
-- 开发工具和工作流
-
----
-
-## 🛠️ 资源库
-
-```
-resources/
-├── pdfs/              # PDF 文件存档
-└── templates/         # 各种模板
-    └── paper_note_template.md
-```
-
----
-
-## ⚙️ 自动化配置
-
-本仓库集成了 OpenClaw 自动化系统：
-
-```
-.openclaw/
-├── daily-research.sh       # 每日调研脚本
-├── CRON_TASK_README.md     # 定时任务说明
-└── ...
-```
-
-### 定时任务
-
-| 任务 | 时间 | 描述 |
-|-----|------|------|
-| daily-ai-research | 每天 10:00 | 自动调研 AI 工作流文章并生成日报 |
-
-### 管理命令
-
-```bash
-# 查看定时任务
-openclaw cron list
-
-# 手动触发日报
-openclaw cron run daily-ai-research
-
-# 查看执行历史
-openclaw cron runs daily-ai-research
-```
-
----
-
-## 🚀 快速导航
-
-### 最新日报
-→ [ai-workflow-digest/](./ai-workflow-digest/)
-
-### 在研论文
-→ [papers/reading/](./papers/reading/)
-
-### 技术笔记
-→ [notes/](./notes/)
-
-### OpenClaw 指南
-→ [notes/openclaw-coding-agent-acceleration-guide.md](./notes/openclaw-coding-agent-acceleration-guide.md)
-
----
-
-## 🎯 2026 目标
-
-- [x] 建立自动化知识收集系统
-- [ ] 完成 50 篇论文精读
-- [ ] 构建高效的 AI 辅助工作流
-- [ ] 沉淀 100+ 技术笔记
-
----
-
-*知识库创建时间: 2026-02-25*  
-*最后更新: 2026-02-26*  
-*维护者: 牛梓茹 + 牛宝 (niubot)* 🤖
+*Last updated: 2026-02-24*
